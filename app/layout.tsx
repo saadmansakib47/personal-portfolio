@@ -1,20 +1,27 @@
-import type { Metadata } from 'next'
-import './globals.css'
+import type React from "react"
+import "./globals.css"
+import { Oswald } from "next/font/google"
 
-export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
-  generator: 'v0.dev',
-}
+// Configure the Oswald font
+const oswald = Oswald({
+  subsets: ["latin"],
+  variable: "--font-oswald", // Define a CSS variable for the font
+  display: "swap", // Optimize font loading
+})
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode
-}>) {
+}) {
   return (
-    <html lang="en">
+    // We expose the Oswald font through the CSS variable `--font-oswald`
+    <html lang="en" className={oswald.variable}>
       <body>{children}</body>
     </html>
   )
 }
+
+export const metadata = {
+      generator: 'v0.dev'
+    };
