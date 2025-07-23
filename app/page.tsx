@@ -1,7 +1,7 @@
 "use client"
 
 import type React from "react"
-
+import AnimatedTitle from "@/app/AnimatedTitle"
 import { useState, useEffect, useRef } from "react"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
@@ -825,10 +825,11 @@ export default function Portfolio() {
       {/* About Section */}
       <section id="about" className="py-32 px-6 relative">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight font-oswald">WHO AM I?</h2>
-            <div className="w-16 h-px bg-gray-600 mx-auto"></div>
-          </div>
+          
+              <div className="text-center mb-20">
+                <AnimatedTitle text="WHO AM I?" />
+                <div className="w-16 h-px bg-gray-600 mx-auto"></div>
+              </div>
 
           <div className="grid md:grid-cols-2 gap-16 items-center">
             <div className="relative">
@@ -875,10 +876,10 @@ export default function Portfolio() {
       {/* Skills Section */}
       <section id="skills" className="py-32 px-6 bg-gray-950/50 relative">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight font-oswald">SKILLS</h2>
-            <div className="w-16 h-px bg-gray-600 mx-auto"></div>
-          </div>
+              <div className="text-center mb-20">
+                <AnimatedTitle text="SKILLS" />
+                <div className="w-16 h-px bg-gray-600 mx-auto"></div>
+              </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {skills.map((skill, index) => (
@@ -891,12 +892,10 @@ export default function Portfolio() {
       {/* Projects Section */}
       <section id="projects" className="py-32 relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 mb-20">
-          <div className="text-center">
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight font-oswald glitch-effect">
-              PROJECTS
-            </h2>
-            <div className="w-16 h-px bg-gray-600 mx-auto"></div>
-          </div>
+              <div className="text-center">
+                <AnimatedTitle text="PROJECTS" />
+                <div className="w-16 h-px bg-gray-600 mx-auto"></div>
+              </div>
         </div>
 
         {/* Project Navigation with Swipe Animation */}
@@ -1026,12 +1025,10 @@ export default function Portfolio() {
       {/* Blogs Section */}
       <section id="blogs" className="py-32 relative overflow-hidden bg-gray-950/30">
         <div className="max-w-6xl mx-auto px-6 mb-20">
-          <div className="text-center">
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight font-oswald glitch-effect">
-              BLOGS
-            </h2>
-            <div className="w-16 h-px bg-gray-600 mx-auto"></div>
-          </div>
+              <div className="text-center">
+                <AnimatedTitle text="BLOGS" />
+                <div className="w-16 h-px bg-gray-600 mx-auto"></div>
+              </div>
         </div>
 
         {/* Blog Navigation with Swipe Animation */}
@@ -1108,10 +1105,10 @@ export default function Portfolio() {
       {/* Contact Section */}
       <section id="contact" className="py-32 px-6 bg-gray-950/50 relative">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold text-white mb-4 tracking-tight font-oswald">CONTACT</h2>
-            <div className="w-16 h-px bg-gray-600 mx-auto"></div>
-          </div>
+              <div className="text-center">
+                <AnimatedTitle text="CONTACTS" />
+                <div className="w-16 h-px bg-gray-600 mx-auto"></div>
+              </div>
 
           <div className="grid md:grid-cols-2 gap-16">
             <div>
